@@ -1,0 +1,56 @@
+*{
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+background-color: hsl(0, 0%, 0%);
+
+}
+.a1 img {
+display:inline-block;
+border-radius: 50px;
+width: 200px;
+margin-left: 220px;
+border:none;
+justify-content: space-around;
+}
+h2{
+font-size: 24px;
+margin: 100px;
+}
+p{
+margin: 100px;
+margin-top: -40px;
+font-size: 20px;
+}
+.a1:hover{
+color:rgb(218, 14, 14); 
+}
+.navbar {
+background-color: #2020209f;
+border-radius: 50px;
+}
+.navbar li{
+display: inline;	
+}
+.navbar li img{
+height:40px;
+width: 40px;
+padding: 11px;
+border:none;
+vertical-align: middle;
+} 
+
+.navbar li  a {
+display: inline-block;
+text-decoration:none;
+margin: 4px;
+padding: 15px;
+
+}
+
+/* Change the link color on hover */
+.navbar li a:hover {
+background-color: #555;
+color: rgb(255, 0, 0);
+}
