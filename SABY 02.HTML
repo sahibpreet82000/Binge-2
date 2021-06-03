@@ -15,15 +15,20 @@
             color: white;  
             margin: 0px;
             padding: 0px;
+            position: relative;
            
         }
         header{
-            position: absolute;
+            /* position: absolute; */ position: fixed;
             z-index: -1;
             content: ""; 
             opacity: 0.4;
-            top: 10px;
-            
+
+            /* Newly Added */
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
         }
         p{
             font-size: 17px;
@@ -33,6 +38,10 @@
         h1{
             font-size: 30px;
         }    
+
+        video {
+            width: 100%;
+        }
 
     </style>
 </head>
