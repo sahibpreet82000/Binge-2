@@ -1,6 +1,6 @@
 *{
     color: rgb(255, 255, 255);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
 }
 body {
 background-color: hsl(0, 0%, 0%);
@@ -8,11 +8,11 @@ background-color: hsl(0, 0%, 0%);
 }
 .a1 img {
 display:inline-block;
-border-radius: 50px;
 width: 200px;
 margin-left: 220px;
 border:none;
-justify-content: space-around;
+/* justify-content: space-around; */
+transition: all 1s ease-in ;
 }
 h2{
 font-size: 24px;
@@ -23,8 +23,9 @@ margin: 100px;
 margin-top: -40px;
 font-size: 20px;
 }
-.a1:hover{
-color:rgb(218, 14, 14); 
+.a1 img:hover{
+width: 400px;
+border: none;
 }
 .navbar {
 background-color: #2020209f;
@@ -53,4 +54,34 @@ padding: 15px;
 .navbar li a:hover {
 background-color: #555;
 color: rgb(255, 0, 0);
+}
+header::before{
+    position:absolute;
+   background-image:url('nnn.jpg');
+   background-repeat: repeat;
+   z-index: -1;
+   content: ""; 
+   width: 100%;
+   height: 200%;
+   opacity: 0.2;
+}
+@media(max-width:800px){
+.image{
+display: flex;
+justify-content: center;
+width: 100%;
+}
+}
+@keyframes animate {
+   0% {
+       opacity: 0.5;
+   }
+
+   50% {
+       opacity: 1;
+   }
+
+   100% {
+       opacity: 0.6;
+   }
 }

@@ -22,7 +22,7 @@
         }
 .forms{
     text-align: center;
-	border:none;
+	/* border:2px solid white; */
     position: relative;
      left:57px; 
 	display: flex;
@@ -72,10 +72,10 @@ input[type]{
 }
 /* .forms:nth-child(odd){
     background-color: rgb(43, 42, 42);
-}
-.forms:nth-child(even){
-    background-color: rgb(58, 58, 58);
 } */
+/* forms:nth-child(even){
+    background-color: rgb(58, 58, 58);
+}  */
 @keyframes animate {
             0% {
                 opacity: 0;
@@ -94,20 +94,20 @@ input[type]{
 </head>
 <body>
     <header>
-    <div> <button class="container" id="b11"><a href="saby 01.html">Home</a> </button></div>
+    <div> <button class="container" id="b11"><a href="saby 01.html" title="home">Home</a> </button></div>
      <div> <h3>Contact us:</h3> </div>
   
  </div>
  <form action="none.php">
-	 <div class="forms">
+	 <div class="forms"><span>
          Name: <input type="text" name="name" placeholder="Enter your name" style="color: black"> </div>
-		<div class="forms">
+		<div class="forms"><span>
 		Age: <input type="number" name="name" placeholder="Enter your Age"  style= "color:black"> </div>
-		<div class="forms">
-		City: <input type="text" name="name" placeholder="Enter your City" style=" color: black"> </div>
-		<div class="forms">
+		<div class="forms"></span><span>
+		City: <input type="text" name="name" placeholder="Enter your City" style=" color: black"> </div> </span>
+		<div class="forms"><span>
 		E-mail: <input type="email" name="name" placeholder="Enter your E-mail" style="color:black">
-	 </div>
+	 </div></span>
      <div class="forms">
  <button class="button"><a href="saby 01.html">Submit</a> </button>
  <button class="button"> Reset</button> </div>
