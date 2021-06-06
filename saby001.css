@@ -6,26 +6,35 @@ body {
 background-color: hsl(0, 0%, 0%);
 
 }
+h2{
+    font-size: 24px;
+    margin: 100px;
+    }
+p{
+    margin: 100px;
+    margin-top: -40px;
+    font-size: 20px;
+    }
+.a1{
+        display: inline;
+        margin-left: 100px;
+        position: relative;
+    }
 .a1 img {
-display:inline-block;
 width: 200px;
-margin-left: 220px;
-border:none;
+margin-left: 122px;
+border:2px solid white;
 /* justify-content: space-around; */
 transition: all 1s ease-in ;
 }
-h2{
-font-size: 24px;
-margin: 100px;
-}
-p{
-margin: 100px;
-margin-top: -40px;
-font-size: 20px;
-}
 .a1 img:hover{
 width: 400px;
-border: none;
+border: 2px solid white;
+}
+.a1 #filter1 {
+	/* display: inline-flexbox; */
+	filter: invert();
+    border: 2px solid black;
 }
 .navbar {
 background-color: #2020209f;
@@ -65,11 +74,34 @@ header::before{
    height: 200%;
    opacity: 0.2;
 }
+.search{
+	float:right;
+	margin: 18px;
+    /* transition: all 3s ease-in ; */
+    animation: animate 1.5s linear;
+
+}
+.image{
+	display:flex;
+	justify-content: center;
+    transition: all 1s ease-in;
+}
+h1{
+	text-align: center;
+	animation: animate 1.5s linear infinite;
+}
+
 @media(max-width:800px){
 .image{
 display: flex;
 justify-content: center;
 width: 100%;
+}
+.a1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
 }
 }
 @keyframes animate {
