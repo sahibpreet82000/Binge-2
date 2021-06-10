@@ -7,6 +7,45 @@
 body {
   background-color: hsl(0, 0%, 0%);
 }
+.logo{
+  font-size: 30px;
+  /* border: 2px solid white; */
+  margin: 0px;
+  padding: 0px;
+  vertical-align: middle;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+.navbar {
+  margin: 20px 22px;
+  background-color: #2020209f;
+  border-radius: 30px;
+}
+.navbar li {
+  display: inline-block;
+  margin: 12px 7px;
+  vertical-align: middle;
+}
+.navbar li img {
+  display: inline-block;
+  width: 55PX;
+  height: 30PX;
+  vertical-align: middle;
+  margin:12px;
+}
+
+.navbar ul li a {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Change the link color on hover */
+.navbar li a:hover {
+  background-color: #555;
+  color: rgb(255, 0, 0);
+}
 .heading h2 {
   position: relative;
   font-size: 24px;
@@ -43,42 +82,17 @@ p {
   filter: invert();
   border: 2px solid black;
 }
-.navbar {
-  margin: 20px 22px;
-  background-color: #2020209f;
-  border-radius: 30px;
-}
-.navbar li {
-  display: inline;
-}
-.navbar li img {
-  height: 40px;
-  width: 40px;
-  padding: 21px;
-  border: none;
-  vertical-align: middle;
-}
 
-.navbar ul li a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 15px;
-}
-
-/* Change the link color on hover */
-.navbar li a:hover {
-  background-color: #555;
-  color: rgb(255, 0, 0);
-}
 #search {
   float: right;
   display: inline;
   width: 200px;
   height: 25px;
-  margin: 9px;
+  margin: 12px;
+  /* vertical-align: middle; */
   /* margin: 18px; */
   /* transition: all 3s ease-in ; */
-  animation: animate 1.5s linear;
+  /* animation: animate 1.5s linear; */
   border-radius: 5px;
 }
 .image {
