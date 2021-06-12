@@ -7,14 +7,13 @@
 body {
   background-color: hsl(0, 0%, 0%);
 }
-.logo{
+.index-name {
   font-size: 30px;
   /* border: 2px solid white; */
   margin: 0px;
   padding: 0px;
   vertical-align: middle;
-  font-family: 'Roboto Condensed', sans-serif;
-
+  font-family: "Roboto Condensed", sans-serif;
 }
 .navbar {
   margin: 20px 22px;
@@ -28,20 +27,23 @@ body {
 }
 .navbar li img {
   display: inline-block;
-  width: 55PX;
-  height: 30PX;
+  width: 55px;
+  height: 30px;
   vertical-align: middle;
-  margin:12px;
+  margin: 12px;
+  border-radius: 4px;
 }
-
 .navbar ul li a {
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
   padding: 10px;
 }
-
-/* Change the link color on hover */
+#navbar_set{
+  /* display: flex; */
+  /* justify-content: center; */
+  margin-left: 302px;
+}
 .navbar li a:hover {
   background-color: #555;
   color: rgb(255, 0, 0);
@@ -82,27 +84,50 @@ p {
   filter: invert();
   border: 2px solid black;
 }
+@media (max-width: 976px) {
+  .a1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    transition: all 1s ease-in;
+  }
+  .a1 img:hover {
+    width: 400px;
+    border: 2px solid white;
+  }
+}
 
 #search {
-  float: right;
   display: inline;
   width: 200px;
   height: 25px;
-  margin: 12px;
+  margin: 12px 150px;
+  position:fixed;
   /* vertical-align: middle; */
   /* margin: 18px; */
   /* transition: all 3s ease-in ; */
-  /* animation: animate 1.5s linear; */
+  animation: animate 1.5s linear;
   border-radius: 5px;
 }
 .image {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 1s ease-in-out;
-  width: 822px;
-  margin: 0px 300px;
+  transition: all 0.7s ease-in-out; 
+  /* width: 822px; */
+  /* margin: 0px 50px; */
   padding: 12px 12px;
+}
+@media(max-width: 976px){
+  .image {
+    display: flex;
+    /* margin: 12px 12px; */
+    justify-content: center;
+    width: 100%;
+    animation: none;
+  }
 }
 h1 {
   text-align: center;
@@ -110,21 +135,13 @@ h1 {
   margin: 22px;
 }
 
-@media (max-width: 900px) {
-  .image {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  .a1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-  }
+@media (max-width: 976px) {
   #search {
     display: inline-block;
+    position: fixed;
+  }
+  #navbar_set{
+    margin: 12px 12px;
   }
 }
 @keyframes animate {
