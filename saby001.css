@@ -21,8 +21,12 @@ body {
   border-radius: 30px;
 }
 .navbar li {
+  /* display: flex;
+  justify-content: space-between;
+  flex-direction: row; */
   display: inline-block;
-  margin: 12px 7px;
+  margin: 12px 7px; 
+  /* align-items: center; */
   vertical-align: middle;
 }
 .navbar li img {
@@ -40,9 +44,10 @@ body {
   padding: 10px;
 }
 #navbar_set{
+  margin-left: 300px;
   /* display: flex; */
   /* justify-content: center; */
-  margin-left: 302px;
+  /* margin-left: 302px; */
 }
 .navbar li a:hover {
   background-color: #555;
@@ -100,16 +105,28 @@ p {
 }
 
 #search {
-  display: inline;
-  width: 200px;
-  height: 25px;
-  margin: 12px 150px;
-  position:fixed;
-  /* vertical-align: middle; */
+  /* display: inline */
+  width: 300px;
+  height: 32px;
+  margin: 10px 100px;
+  position:absolute;
+  /* overflow:hidden; */
+  background: transparent;
+  vertical-align: middle;
+  /* align-items: center; */
   /* margin: 18px; */
   /* transition: all 3s ease-in ; */
   animation: animate 1.5s linear;
-  border-radius: 5px;
+  /* border: 2px solid white; */
+  text-decoration: none;
+  border-radius: 15px;
+}
+@media (max-width: 976px) {
+  #search {
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+  }
 }
 .image {
   display: flex;
@@ -136,12 +153,13 @@ h1 {
 }
 
 @media (max-width: 976px) {
-  #search {
-    display: inline-block;
-    position: fixed;
-  }
-  #navbar_set{
+  .navbar #navbar_set{
     margin: 12px 12px;
+  }
+  .ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
   }
 }
 @keyframes animate {
