@@ -105,27 +105,20 @@ p {
 }
 
 #search {
-  /* display: inline */
   width: 300px;
   height: 32px;
-  margin: 10px 100px;
-  position:absolute;
-  /* overflow:hidden; */
+  margin-left: 190px;
+  /* position:absolute; */
   background: transparent;
-  vertical-align: middle;
-  /* align-items: center; */
-  /* margin: 18px; */
-  /* transition: all 3s ease-in ; */
   animation: animate 1.5s linear;
-  /* border: 2px solid white; */
+  border: 2px solid white;
   text-decoration: none;
   border-radius: 15px;
 }
-@media (max-width: 976px) {
+@media (max-width: 876px) {
   #search {
-    display: inline-block;
-    position: absolute;
-    width: 200px;
+   overflow: hidden;
+   display: none;
   }
 }
 .image {
